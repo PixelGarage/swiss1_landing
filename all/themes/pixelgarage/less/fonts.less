@@ -1,0 +1,69 @@
+/* --------------------------------------------------
+ * Pixelgarage fonts
+ * --------------------------------------------------*/
+//
+// webfont licences
+//@import '../fonts/BrandonGrotesque/BrandonGrotesque-Licence.css';
+
+//
+// Google fonts
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+
+//
+// Awesome icon font
+@import '../fonts/font-awesome/less/font-awesome';
+@fa-font-path: '@{pxl-font-path}/font-awesome/fonts'; // override fa font path (lazy loading)
+
+//
+// Define customer specific fonts
+@pxl-font-path: '../fonts';
+
+// icon font
+@pxl-icon-font: 'fontawesome';
+
+// title font
+@pxl-title-font: 'FruttigerRegular', sans-serif;
+@pxl-subtitle-font: 'FruttigerRegular', sans-serif;
+
+// text fonts
+@pxl-text-font: 'FruttigerNeueThin', sans-serif;
+@pxl-text-font-light: 'FruttigerNeueThin', sans-serif;
+@pxl-text-font-medium: @pxl-text-font;
+@pxl-text-font-bold: 'FruttigerNeueThin', sans-serif;
+@pxl-text-font-italic: 'FruttigerNeueThin', sans-serif;
+@pxl-text-font-light-italic: 'FruttigerNeueThin', sans-serif;
+@pxl-text-font-medium-italic: @pxl-text-font;
+@pxl-text-font-bold-italic: 'FruttigerNeueThin', sans-serif;
+
+// form font
+@pxl-form-font: @pxl-text-font;
+
+// overrides
+@font-family-base: @pxl-text-font;
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+
+
+
+
+@font-face {
+  font-family: 'FruttigerNeueThin';
+  src: url('@{pxl-font-path}/FruttigerNeueThin/FruttigerNeueThin.eot');
+  src: url('@{pxl-font-path}/FruttigerNeueThin/FruttigerNeueThin.eot') format('embedded-opentype'),
+  url('@{pxl-font-path}/FruttigerNeueThin/FruttigerNeueThin.woff2') format('woff2'),
+  url('@{pxl-font-path}/FruttigerNeueThin/FruttigerNeueThin.woff') format('woff'),
+  url('@{pxl-font-path}/FruttigerNeueThin/FruttigerNeueThin.ttf') format('truetype'),
+  url('@{pxl-font-path}/FruttigerNeueThin/FruttigerNeueThin.svg#FruttigerNeueThin') format('svg');
+}
+
+@font-face {
+  font-family: 'FruttigerRegular';
+  src: url('@{pxl-font-path}/FruttigerRegular/FruttigerRegular.eot');
+  src: url('@{pxl-font-path}/FruttigerRegular/FruttigerRegular.eot') format('embedded-opentype'),
+  url('@{pxl-font-path}/FruttigerRegular/FruttigerRegular.woff2') format('woff2'),
+  url('@{pxl-font-path}/FruttigerRegular/FruttigerRegular.woff') format('woff'),
+  url('@{pxl-font-path}/FruttigerRegular/FruttigerRegular.ttf') format('truetype'),
+  url('@{pxl-font-path}/FruttigerRegular/FruttigerRegular.svg#FruttigerRegular') format('svg');
+}

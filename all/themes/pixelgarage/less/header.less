@@ -1,0 +1,93 @@
+/*
+ *  Header section (navigation)
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+
+
+
+// Main settings
+// -------------------------
+body.navbar-is-fixed-top {
+  padding-top: 110px !important;
+
+
+  &.admin-menu {
+    padding-top: 110px !important;
+  }
+
+}
+
+
+header#navbar {
+  border-bottom: none;
+  background: transparent none;
+
+  .container {
+    padding: 0 @grid-gutter-width / 2 10px;
+
+    .navbar-header {
+      width: 100%;
+      // header (branding)
+      a.logo {
+        width: 100%;
+
+        img {
+          //display: block;
+          margin: 0 auto;
+          max-height: 100px;
+          width: auto;
+
+          @media @narrow {
+            max-height: 100px;
+          }
+        }
+      }
+
+      a.navbar-brand {
+        padding: 0;
+        font-family: @pxl-text-font-medium;
+        font-size: @font-size-h1;
+        color: @gray-darker;
+        line-height: 1;
+      }
+
+      .navbar-toggle {
+        // navbar toggle with burger
+        padding: 5px 10px;
+      }
+    }
+
+    // collapse part
+    .navbar-collapse {
+      // main menu
+      nav {
+        ul.navbar-nav {
+          margin: 0;
+
+          li {
+            height: 40px;
+
+            a {
+              padding: 7px 15px;
+              font-family: @pxl-text-font;
+              font-size: @font-size-base;
+              line-height: 1;
+
+              &:hover,
+              &.active {
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
